@@ -38,7 +38,7 @@ define(['jquery', 'local_settings', 'base/user', 'base/character', 'base/item', 
       character.all = currLevel.characters;
 
       title.text(currLevel.location);
-      
+
       // Load initial screen
       utils.loadTemplate('level.html', {
         level: currLevel.level,
@@ -100,7 +100,7 @@ define(['jquery', 'local_settings', 'base/user', 'base/character', 'base/item', 
           user.hasCollection(requirement)))) {
 
           if (inventory && !user.hasInteracted(currLevel.level, character)) {
-            img.attr('src', '/media/images/inventory/' + inventory + '.png');
+            img.attr('src', 'media/images/inventory/' + inventory + '.png');
             img.parent().removeClass('hidden');
           }
 
@@ -134,7 +134,7 @@ define(['jquery', 'local_settings', 'base/user', 'base/character', 'base/item', 
         if (inventory) {
           item.setInventory(inventory, user);
           var img = body.find('#inventory-notify img');
-          img.attr('src', '/media/images/inventory/' + inventory + '.png');
+          img.attr('src', 'media/images/inventory/' + inventory + '.png');
           img.parent().removeClass('hidden');
         }
 
@@ -160,7 +160,4 @@ define(['jquery', 'local_settings', 'base/user', 'base/character', 'base/item', 
         break;
     }
   });
-  
 });
-
-
