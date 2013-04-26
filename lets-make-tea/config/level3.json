@@ -1,0 +1,29 @@
+{
+    "level": 3,
+    "location": "You made delicious tea!",
+    "background_image": "finishedtea.jpg",
+    "description": "You made delicious tea!",
+    "characters": {
+        "3-PETER": {
+            "name": "PETER",
+            "image": "bird.png",
+            "left": 0,
+            "top": 473,
+            "requires": "",
+            "first_says": "Wow! You did great!",
+            "finally_says": "Good skill!",
+            "gives": ""
+        },
+        "3-AL": {
+            "name": "AL",
+            "image": "cat.png",
+            "left": 677,
+            "top": 480,
+            "requires": "",
+            "first_says": "I like tea!",
+            "finally_says": "Yes!",
+            "gives": ""
+        }
+    },
+    "items": {}
+}

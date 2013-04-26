@@ -1,0 +1,49 @@
+{
+    "level": 2,
+    "location": "Under a Cow in Denver",
+    "background_image": "cow.jpg",
+    "description": "Under a Cow in Denver",
+    "characters": {
+        "2-PETER": {
+            "name": "PETER",
+            "image": "bird.png",
+            "left": 50,
+            "top": 480,
+            "requires": "",
+            "first_says": "Hey Al, ask this guy for some milk",
+            "finally_says": "Put it in the tea, Al.",
+            "gives": ""
+        },
+        "2-AL": {
+            "name": "AL",
+            "image": "cat.png",
+            "left": 500,
+            "top": 480,
+            "requires": "",
+            "first_says": "Milk!",
+            "finally_says": "Thanks!",
+            "gives": ""
+        },
+        "2-guy": {
+            "name": "guy",
+            "image": "guy.jpg",
+            "left": 758,
+            "top": 59,
+            "requires": "",
+            "first_says": "This milk is tapped from a silver maple and boiled for 30 years",
+            "finally_says": "Enjoy!",
+            "gives": "milk"
+        }
+    },
+    "items": {
+        "2-tea": {
+            "name": "tea",
+            "image": "tea.png",
+            "left": 455,
+            "top": 607,
+            "requires": "milk",
+            "gives": "",
+            "levels_up_to": 3
+        }
+    }
+}
