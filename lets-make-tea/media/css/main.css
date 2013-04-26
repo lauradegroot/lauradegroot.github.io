@@ -21,10 +21,7 @@ a {
 #message, .item {
     border: 2px solid transparent;
 }
-.level-1 #1-tea,
-.level-2 #2-tea{
-    z-index: 5;
-}
+
 .debugger .description, .debugger .game-wrapper,
 .debugger .character, .debugger #message, .debugger .item {
     border: 2px solid #1af7ff;
@@ -73,10 +70,11 @@ a {
     top: -2px;
 }
 
-.character {
-    position: absolute;
-    z-index: 2;
+.character{
+  position: absolute;
+  z-index: 2;
 }
+
 .item {
     position: absolute;
     z-index: 5;
