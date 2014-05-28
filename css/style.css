@@ -1,101 +1,17 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
-  background: url(../img/cubes.png); }
+  overflow: hidden; }
 
-a {
-  color: #34a4b8;
-  text-decoration: none; }
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
 
-a:hover {
-  color: #f181ad; }
-
-.content {
-  width: 820px;
-  margin: 0 auto; }
-
-.gifs {
-  float: left; }
-  .gifs img {
-    width: 135px; }
-
-.meatups-list {
-  width: 550px;
-  background-color: #fff;
-  padding-bottom: 40px;
-  float: left;
-  height: 970px; }
-  .meatups-list h1 {
-    font-weight: normal;
-    padding-top: 40px;
-    margin-bottom: 0px;
-    letter-spacing: 1.5px; }
-  .meatups-list p {
-    margin: 0 0 9px 0; }
-  .meatups-list p.subhead {
-    font-size: 19px;
-    letter-spacing: 1px; }
-  .meatups-list .meatup {
-    width: 400px;
-    margin: 30px auto 100px auto; }
-    .meatups-list .meatup h2 {
-      font-weight: normal;
-      margin-bottom: 5px;
-      font-size: 30px; }
-    .meatups-list .meatup p {
-      font-size: 18px; }
-    .meatups-list .meatup .count {
-      margin-top: 10px;
-      font-size: 30px; }
-
-/* jQuery Countdown styles 2.0.0. */
-.countdown-rtl {
-  direction: rtl; }
-
-.countdown-holding span {
-  color: #888; }
-
-.countdown-row {
-  clear: both;
+img:first-child {
   width: 100%;
-  padding: 0px 2px;
-  text-align: center; }
+  height: 100%; }
 
-.countdown-show1 .countdown-section {
-  width: 98%; }
-
-.countdown-show2 .countdown-section {
-  width: 48%; }
-
-.countdown-show3 .countdown-section {
-  width: 32.5%; }
-
-.countdown-show4 .countdown-section {
-  width: 24.5%; }
-
-.countdown-show5 .countdown-section {
-  width: 19.5%; }
-
-.countdown-show6 .countdown-section {
-  width: 16.25%; }
-
-.countdown-show7 .countdown-section {
-  width: 14%; }
-
-.countdown-section {
-  display: block;
-  float: left;
-  font-size: 75%;
-  text-align: center; }
-
-.countdown-amount {
-  font-size: 200%;
-  color: #f181ad; }
-
-.countdown-period {
-  display: block; }
-
-.countdown-descr {
-  display: block;
-  width: 100%;
-  color: #f181ad; }
+img + img {
+  border-radius: 100%; }

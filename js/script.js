@@ -1,17 +1,36 @@
-$(function() {
-  
- countdownToMeatups();
-
+$(function(){
+	useQuerySrc();	
 });
 
-var countdownToMeatups = function(){
-	
-	var meatupEast = new Date(2014, 03, 10);
-	$('.east .count').countdown({until: meatupEast});
-	
-	var meatupWest = new Date(2014, 04, 9);
-	$('.west .count').countdown({until: meatupWest});
+function useQuerySrc(){
+	var imageSrc = getUrlVars()["src"];
+	if (undefined !== imageSrc && imageSrc.length){
+		$('.image img:first-child').replaceWith("<img src='"+imageSrc+"'/>");
+		woop();
+	} else{
+		woop();
+	}
+}
 
-	var meatupEu = new Date(2014, 04, 17);
-	$('.eu .count').countdown({until: meatupEu});
+function woop(){
+	for (var i=0; i < 20; i++){
+		var image = $('.image img:last-child');
+		var newImage = image.clone().appendTo('.image');
+		var prevImage = newImage.prev();
+		var prevWidth = prevImage.width();
+		var newWidth = (prevWidth / 120) * 100;
+		newImage.css('width', newWidth);
+	}
+}
+
+function getUrlVars(){
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;    
 }

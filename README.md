@@ -1,6 +1,4 @@
-meatup-countdown
-================
+woop
+====
 
-WE ARE GONNA MEAT UP
-
-Countdown and info for upcoming meetups for the meatspac.es family
+lil' thingy to make cool water dropplety trippy images
