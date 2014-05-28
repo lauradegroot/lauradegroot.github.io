@@ -13,7 +13,7 @@ function useQuerySrc(){
 }
 
 function woop(){
-	for (var i=0; i < 20; i++){
+	for (var i=0; i < 15; i++){
 		var image = $('.image img:last-child');
 		var newImage = image.clone().appendTo('.image');
 		var prevImage = newImage.prev();
